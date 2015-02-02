@@ -1,0 +1,177 @@
+main {
+    max-width: 750px;
+}
+
+/* Header */
+
+.global-header {
+    position: relative;
+    height: 210px;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.header-text .tag-line {
+    margin: 10px auto;
+    padding: 0 10px;
+    max-width: 430px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-weight: 300;
+}
+
+.header-text .sns-links {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.header-text .sns-links a {
+    display: inline-block;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color,border-color 0.1s linear;
+}
+
+.header-text .sns-links a:hover {
+    border-color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    transition: color,border-color 0.1s linear;
+}
+
+.header-text h1 {
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.header-text h1 a {
+    color: rgba(255, 255, 255, 1.0);
+    text-decoration: none;
+}
+
+/* Footer */
+
+.global-footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    max-width: 750px;
+    height: 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.global-footer .sns-links {
+    float: right;
+}
+
+.global-footer .sns-links a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color,border-color 0.1s linear;
+}
+
+.global-footer .sns-links a i {
+    vertical-align: middle;
+}
+
+.global-footer .sns-links a:hover {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
+    transition: color,border-color 0.1s linear;
+}
+
+/* Article */
+
+.article-list h2 a {
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.article-list h2 a:hover {
+    transition: color 0.1s linear;
+}
+
+.post-meta {
+    margin: 5px 0;
+}
+
+.post-date {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.post-tag a {
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: color,border-color,background-color 0.1s linear;
+}
+
+.post-tag a:hover {
+    background-color: rgba(0, 0, 0, 1.0);
+    color: rgba(255, 255, 255, 0.9);
+    transition: color,border-color,background-color 0.1s linear;
+}
+
+.not-found h1 {
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 200;
+    font-size: 80px;
+}
+
+.not-found {
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* Override some of Bootstrap's styles */
+
+pre {
+    font-size: 14px;
+}
+
+pre code {
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
+}
+
+.pager li>a {
+    transition: background-color 0.1s linear;
+}
+
+.pager li>a:hover {
+    transition: background-color 0.1s linear;
+}
+
+blockquote {
+     font-style:italic;
+}

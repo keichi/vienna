@@ -1,0 +1,22 @@
+<div class="sns-links">
+  {{ with .Site.Params.twitter }}
+  <a href="https://twitter.com/{{ . }}" target="_blank">
+      <i class="fa fa-twitter"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.facebook }}
+  <a href="https://facebook.com/{{ . }}" target="_blank">
+    <i class="fa fa-facebook"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.github }}
+  <a href="https://github.com/{{ . }}" target="_blank">
+    <i class="fa fa-github"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.linkedin }}
+  <a href="https://jp.linkedin.com/in/{{ . }}" target="_blank">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  {{ end }}
+</div>
