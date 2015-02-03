@@ -6,7 +6,13 @@
   <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
 
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <title>
+    {{ if eq .Url "/" }}
+    {{ .Site.Title }}
+    {{ else }}
+    {{ .Title }} &middot; {{ .Site.Title }}
+    {{ end }}
+  </title>
 
   <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/bootstrap.min.css" />
   <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/main.css" />
