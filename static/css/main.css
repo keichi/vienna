@@ -43,10 +43,11 @@ main {
     width: 30px;
     height: 30px;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 30px;
+    border-radius: 15px;
     color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
     font-size: 20px;
+    line-height: 30px;
     transition: color,border-color 0.1s linear;
 }
 
