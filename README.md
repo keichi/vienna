@@ -17,7 +17,7 @@ Notable features are:
 
 In your hugo site directory, run:
 
-```
+```shell
 $ mkdir themes
 $ cd themes
 $ git clone https://github.com/keichi/vienna
@@ -28,7 +28,7 @@ $ git clone https://github.com/keichi/vienna
 You may specify following options in `config.toml` of your site to make use of
 this theme's feattures.
 
-```
+```toml
 baseurl = "Your site URL"
 languageCode = "en-us"
 title = "Your site title"
@@ -54,7 +54,7 @@ copyright = "&copy; Copyright notice"
 Use hugo's `-t vienna` or `--theme=vienna` option with hugo commands.
 Example:
 
-```
+```shell
 $ hugo server -t vienna -w -D
 ```
 
