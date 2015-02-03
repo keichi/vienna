@@ -9,7 +9,7 @@ Notable features are:
 - Client side source code highlighting
 - Social links (Twitter, Facebook, GitHub, LinkedIn)
 - Support for tags
-- Analytics with Mixpanel
+- Analytics with Google Analytics or Mixpanel
 - Responsive design
 - Font Awesome icons
 
@@ -26,7 +26,7 @@ $ git clone https://github.com/keichi/vienna
 ## Configuration
 
 You may specify following options in `config.toml` of your site to make use of
-this theme's feattures.
+this theme's features.
 
 ```toml
 baseurl = "Your site URL"
@@ -43,6 +43,8 @@ copyright = "&copy; Copyright notice"
     github = "Your GitHub username"
     linkedin = "Your LinkedIn username"
     facebook = "Your Facebook username"
+    # Google Analytics API key. (Optional)
+    ga_api_key = "Your Google Analytics tracking id"
     # Mixpanel API key. (Optional)
     mixpanel_api_key = "Your Mixpanel API key"
     # Short bio/tagline. This is displayer in the header.
