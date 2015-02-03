@@ -1,5 +1,4 @@
 +++
-Title =
 Description = ""
 Tags = []
 +++
