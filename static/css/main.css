@@ -5,27 +5,11 @@ main {
 /* Header */
 
 .global-header {
-    position: relative;
-    height: 210px;
-}
-
-@media (max-width: 768px) {
-    .global-header {
-        height: 250px;
-    }
-}
-
-.header-img {
-    width: 100%;
-    height: 100%;
     background-image: url(/images/bg.jpg);
     background-size: cover;
 }
 
 .header-text {
-    position: absolute;
-    top: 0;
-    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     color: rgba(255, 255, 255, 0.9);
