@@ -2,7 +2,7 @@
 {{ $baseurl := .Site.BaseUrl }}
 <article>
   <header>
-    <h1>{{ .Title }}</h1>
+    <h1 class="text-primary">{{ .Title }}</h1>
     <div class="post-meta clearfix">
       <div class="post-date pull-left">
         Posted on
@@ -21,6 +21,21 @@
     {{ .Content }}
   </section>
   <footer>
+    <section class="author-info row">
+      <div class="author-avatar col-md-2">
+        {{ with .Site.Params.avatar }}
+        <img src="{{ . }}" />
+        {{ end }}
+      </div>
+      <div class="author-meta col-md-6">
+      {{ with .Site.Params.author }}
+      <h1 class="author-name text-primary">{{ . }}</h1>
+      {{ end }}
+      {{ with .Site.Params.bio }}
+      <div class="author-bio">{{ . }}</div>
+      {{ end }}
+      </div>
+    </section>
     <ul class="pager">
       {{ if .Prev }}
       <li class="previous"><a href="{{ .Prev.Permalink }}"><span aria-hidden="true">&larr;</span> Older</a></li>
