@@ -42,6 +42,12 @@
       </div>
       {{ end }}
       {{ partial "link.html" . }}
+      {{ with .RSSLink }}
+      <a href="{{ . }}" class="btn-subscribe hidden-xs">
+        <i class="fa fa-rss"></i>
+        Subscribe
+      </a>
+      {{ end }}
     </section>
   </header>
   <main class="container">

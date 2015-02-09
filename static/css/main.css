@@ -10,6 +10,7 @@ main {
 }
 
 .header-text {
+    position: relative;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     color: rgba(255, 255, 255, 0.9);
@@ -58,6 +59,25 @@ main {
 .header-text h1 a {
     color: rgba(255, 255, 255, 1.0);
     text-decoration: none;
+}
+
+a.btn-subscribe {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 7px 16px;
+    border: 1px solid rgba(255, 255, 255, 1.0);
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 1.0);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 13px;
+    transition: color,background-color 0.1s linear;
+}
+
+a.btn-subscribe:hover {
+    background-color: rgba(255, 255, 255, 1.0);
+    color: rgba(0, 0, 0, 1.0);
 }
 
 /* Footer */
