@@ -35,9 +35,9 @@ main {
     margin: 0 2px;
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 15px;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-size: 20px;
     line-height: 30px;
@@ -45,8 +45,8 @@ main {
 }
 
 .header-text .sns-links a:hover {
-    border-color: rgba(255, 255, 255, 0.9);
-    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 1.0);
+    color: rgba(255, 255, 255, 1.0);
 }
 
 .header-text h1 {
@@ -67,6 +67,7 @@ a.btn-header {
     padding: 7px 16px;
     border: 1px solid rgba(255, 255, 255, 1.0);
     border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
     color: rgba(255, 255, 255, 1.0);
     text-decoration: none;
     font-weight: 300;
