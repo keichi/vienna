@@ -46,7 +46,6 @@ main {
 .header-text .sns-links a:hover {
     border-color: rgba(255, 255, 255, 0.9);
     color: rgba(255, 255, 255, 0.9);
-    transition: color,border-color 0.1s linear;
 }
 
 .header-text h1 {
@@ -97,17 +96,12 @@ main {
 .global-footer .sns-links a:hover {
     border: 1px solid rgba(0, 0, 0, 0.8);
     color: rgba(0, 0, 0, 0.7);
-    transition: color,border-color 0.1s linear;
 }
 
 /* Article */
 
 .article-list h2 a {
     text-decoration: none;
-    transition: color 0.1s linear;
-}
-
-.article-list h2 a:hover {
     transition: color 0.1s linear;
 }
 
@@ -131,7 +125,6 @@ main {
 .post-tag a:hover {
     background-color: rgba(0, 0, 0, 1.0);
     color: rgba(255, 255, 255, 1.0);
-    transition: color,border-color,background-color 0.1s linear;
 }
 
 .not-found h1 {
@@ -157,10 +150,6 @@ pre code {
 }
 
 .pager li>a {
-    transition: background-color 0.1s linear;
-}
-
-.pager li>a:hover {
     transition: background-color 0.1s linear;
 }
 
