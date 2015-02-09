@@ -61,10 +61,9 @@ main {
     text-decoration: none;
 }
 
-a.btn-subscribe {
+a.btn-header {
     position: absolute;
     top: 20px;
-    right: 20px;
     padding: 7px 16px;
     border: 1px solid rgba(255, 255, 255, 1.0);
     border-radius: 3px;
@@ -75,9 +74,17 @@ a.btn-subscribe {
     transition: color,background-color 0.1s linear;
 }
 
-a.btn-subscribe:hover {
+a.btn-header:hover {
     background-color: rgba(255, 255, 255, 1.0);
     color: rgba(0, 0, 0, 1.0);
+}
+
+a.btn-subscribe {
+    right: 20px;
+}
+
+a.btn-back {
+    left: 20px;
 }
 
 /* Footer */

@@ -42,8 +42,14 @@
       </div>
       {{ end }}
       {{ partial "link.html" . }}
+      {{ if ne .Url "/" }}
+      <a href="{{ .Site.BaseUrl }}" class="btn-header btn-back hidden-xs">
+        <i class="fa fa-angle-left"></i>
+        &nbsp;Home
+      </a>
+      {{ end }}
       {{ with .RSSLink }}
-      <a href="{{ . }}" class="btn-subscribe hidden-xs">
+      <a href="{{ . }}" class="btn-header btn-subscribe hidden-xs">
         <i class="fa fa-rss"></i>
         Subscribe
       </a>
