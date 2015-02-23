@@ -37,13 +37,13 @@
       </div>
     </section>
     <ul class="pager">
-      {{ if .Prev }}
-      <li class="previous"><a href="{{ .Prev.Permalink }}"><span aria-hidden="true">&larr;</span> Older</a></li>
+      {{ if .Next }}
+      <li class="previous"><a href="{{ .Next.Permalink }}"><span aria-hidden="true">&larr;</span> Older</a></li>
       {{ else }}
       <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
       {{ end }}
-      {{ if .Next }}
-      <li class="next"><a href="{{ .Next.Permalink }}">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      {{ if .Prev }}
+      <li class="next"><a href="{{ .Prev.Permalink }}">Newer <span aria-hidden="true">&rarr;</span></a></li>
       {{ else }}
       <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
       {{ end }}
