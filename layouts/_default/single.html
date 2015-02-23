@@ -28,13 +28,21 @@
         {{ end }}
       </div>
       <div class="author-meta col-md-6">
-      {{ with .Site.Params.author }}
-      <h1 class="author-name text-primary">{{ . }}</h1>
-      {{ end }}
-      {{ with .Site.Params.bio }}
-      <div class="author-bio">{{ . }}</div>
-      {{ end }}
+        {{ with .Site.Params.author }}
+        <h1 class="author-name text-primary">{{ . }}</h1>
+        {{ end }}
+        {{ with .Site.Params.bio }}
+        <div class="author-bio">{{ . }}</div>
+        {{ end }}
       </div>
+      {{ with .Site.Params.contact }}
+      <div class="author-contact col-md-4">
+        <a href="{{ . }}">
+          <i class="fa fa-envelope-o"></i>
+          &nbsp;Contact me
+        </a>
+      </div>
+      {{ end }}
     </section>
     <ul class="pager">
       {{ if .Next }}

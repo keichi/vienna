@@ -185,6 +185,33 @@ a.btn-back {
     height: 100px;
     border-radius: 50px;
 }
+
+.author-contact {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.author-contact a {
+    display: inline-block;
+    padding: 7px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 13px;
+    transition: background-color,border-color,color 0.1s linear
+}
+
+.author-contact a:hover {
+    background-color: rgba(51, 122, 183, 1.0);
+    border: 1px solid rgba(51, 122, 182, 1.0);
+    color: rgba(255, 255, 255, 1.0);
+}
+
 /* Override some of Bootstrap's styles */
 
 pre {
