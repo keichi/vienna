@@ -165,6 +165,26 @@ a.btn-back {
     text-align: center;
 }
 
+.author-info {
+    padding: 25px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.author-name {
+    margin: 0 0 5px 0;
+    font-size: 30px;
+}
+
+.author-bio {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.author-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
 /* Override some of Bootstrap's styles */
 
 pre {
