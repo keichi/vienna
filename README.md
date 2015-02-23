@@ -32,23 +32,26 @@ this theme's features.
 baseurl = "Your site URL"
 languageCode = "en-us"
 title = "Your site title"
-author = "Your Name"
 # Copyright notice. This is displayer in the footer.
 copyright = "&copy; Copyright notice"
 
 [params]
     # Social accounts. Link to these accounts are displayed in the header and
-    # footer. (Optional)
+    # footer.
     twitter = "Your Twitter username"
     github = "Your GitHub username"
     linkedin = "Your LinkedIn username"
     facebook = "Your Facebook username"
-    # Google Analytics API key. (Optional)
+    # Google Analytics API key.
     ga_api_key = "Your Google Analytics tracking id"
-    # Mixpanel API key. (Optional)
+    # Mixpanel API key.
     mixpanel_api_key = "Your Mixpanel API key"
-    # Short bio/tagline. This is displayer in the header.
+    author = "Your Name"
+    avatar = "/path/to/avatar"
+    contact = "Your contact link (ex. mailto:foo@example.com)"
     bio = "Your short bio/tagline"
+    # Short subtitle/tagline. This is displayed in the header.
+    subtitle = "is a software developer, hardware hacker and a beer lover. He believes in the power of code."
 ```
 
 ## Usage
