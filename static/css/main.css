@@ -183,6 +183,8 @@ a.btn-back {
 .author-avatar img {
     width: 100px;
     height: 100px;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: 50px;
 }
 
