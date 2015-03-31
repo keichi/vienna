@@ -14,6 +14,11 @@
     <i class="fa fa-github"></i>
   </a>
   {{ end }}
+  {{ with .Site.Params.stackoverflow }}
+  <a href="{{ . }}" target="_blank">
+    <i class="fa fa-stack-overflow"></i>
+  </a>
+  {{ end }}
   {{ with .Site.Params.linkedin }}
   <a href="https://jp.linkedin.com/in/{{ . }}" target="_blank">
     <i class="fa fa-linkedin"></i>
