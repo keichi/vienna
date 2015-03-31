@@ -14,6 +14,7 @@ main {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 1px;
 }
 
 .header-text .tag-line {
@@ -28,7 +29,6 @@ main {
 .header-text .sns-links {
     margin: 20px auto;
     text-align: center;
-    padding-bottom: 15px;
 }
 
 .header-text .sns-links a {
