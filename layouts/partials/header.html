@@ -33,7 +33,9 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
   <link rel="shortcut icon" href="{{ .Site.BaseUrl }}images/favicon.ico" />
   <link rel="apple-touch-icon" href="{{ .Site.BaseUrl }}images/apple-touch-icon.png" />
+  {{ if eq .Url "/" }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  {{ end }}
 </head>
 <body>
   <header class="global-header">
