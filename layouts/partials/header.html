@@ -6,6 +6,9 @@
   <meta property="og:title" content="{{ if ne .Url "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
+  {{ with .Params.images }}{{ range first 5 . }}
+  <meta property="og:image" content="{{ . }}" />
+  {{ end }}{{ end }}
   {{ if .IsPage }}
   <meta property="og:type" content="article" />
   {{ with .Site.Params.facebook }}
