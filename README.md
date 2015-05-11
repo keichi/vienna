@@ -42,7 +42,7 @@ copyright = "&copy; Copyright notice"
     github = "Your GitHub username"
     linkedin = "Your LinkedIn username"
     facebook = "Your Facebook username"
-    stackoverflow = "Your Stackoverflow profile"
+    stackoverflow = "Your Stackoverflow user id (number)"
     # Google Analytics API key.
     ga_api_key = "Your Google Analytics tracking id"
     # Mixpanel API key.
