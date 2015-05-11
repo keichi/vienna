@@ -53,6 +53,7 @@ copyright = "&copy; Copyright notice"
     bio = "Your short bio/tagline"
     # Short subtitle/tagline. This is displayed in the header.
     subtitle = "is a software developer, hardware hacker and a beer lover. He believes in the power of code."
+    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
 ```
 
 ## Usage
