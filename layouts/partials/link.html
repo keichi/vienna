@@ -1,7 +1,12 @@
 <div class="sns-links hidden-print">
   {{ with .Site.Params.twitter }}
   <a href="https://twitter.com/{{ . }}" target="_blank">
-      <i class="fa fa-twitter"></i>
+    <i class="fa fa-twitter"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.googleplus }}
+  <a href="https://plus.google.com/+{{ . }}" target="_blank">
+    <i class="fa fa-google"></i>
   </a>
   {{ end }}
   {{ with .Site.Params.facebook }}

@@ -41,6 +41,7 @@ copyright = "&copy; Copyright notice"
     twitter = "Your Twitter username"
     github = "Your GitHub username"
     linkedin = "Your LinkedIn username"
+    googleplus = "Your Google+ user id"
     facebook = "Your Facebook username"
     stackoverflow = "Your Stackoverflow profile"
     # Google Analytics API key.
