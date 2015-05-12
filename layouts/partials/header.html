@@ -3,6 +3,9 @@
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  {{ with .Site.Params.themecolor }}
+  <meta name="theme-color" content="{{ . }}" />
+  {{ end }}
   <meta property="og:title" content="{{ if ne .Url "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
