@@ -1,4 +1,9 @@
 <div class="sns-links hidden-print">
+  {{ with .Site.Params.contact }}
+  <a href="{{ . }}">
+    <i class="fa fa-envelope"></i>
+  </a>
+  {{ end }}
   {{ with .Site.Params.twitter }}
   <a href="https://twitter.com/{{ . }}" target="_blank">
       <i class="fa fa-twitter"></i>
