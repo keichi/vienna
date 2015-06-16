@@ -1,7 +1,17 @@
 <div class="sns-links hidden-print">
+  {{ with .Site.Params.contact }}
+  <a href="{{ . }}">
+    <i class="fa fa-envelope"></i>
+  </a>
+  {{ end }}
   {{ with .Site.Params.twitter }}
   <a href="https://twitter.com/{{ . }}" target="_blank">
-      <i class="fa fa-twitter"></i>
+    <i class="fa fa-twitter"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.googleplus }}
+  <a href="https://plus.google.com/+{{ . }}" target="_blank">
+    <i class="fa fa-google"></i>
   </a>
   {{ end }}
   {{ with .Site.Params.facebook }}
@@ -15,12 +25,12 @@
   </a>
   {{ end }}
   {{ with .Site.Params.stackoverflow }}
-  <a href="{{ . }}" target="_blank">
+  <a href="https://stackoverflow.com/users/{{ . }}" target="_blank">
     <i class="fa fa-stack-overflow"></i>
   </a>
   {{ end }}
   {{ with .Site.Params.linkedin }}
-  <a href="https://jp.linkedin.com/in/{{ . }}" target="_blank">
+  <a href="https://linkedin.com/in/{{ . }}" target="_blank">
     <i class="fa fa-linkedin"></i>
   </a>
   {{ end }}

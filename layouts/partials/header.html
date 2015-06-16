@@ -4,6 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
+  {{ with .Site.Params.themecolor }}
+  <meta name="theme-color" content="{{ . }}" />
+  {{ end }}
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   {{ with .Params.images }}{{ range first 5 . }}

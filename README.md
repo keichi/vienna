@@ -41,8 +41,9 @@ copyright = "&copy; Copyright notice"
     twitter = "Your Twitter username"
     github = "Your GitHub username"
     linkedin = "Your LinkedIn username"
+    googleplus = "Your Google+ user id"
     facebook = "Your Facebook username"
-    stackoverflow = "Your Stackoverflow profile"
+    stackoverflow = "Your Stackoverflow user id (number)"
     # Google Analytics API key.
     ga_api_key = "Your Google Analytics tracking id"
     # Mixpanel API key.
@@ -53,6 +54,7 @@ copyright = "&copy; Copyright notice"
     bio = "Your short bio/tagline"
     # Short subtitle/tagline. This is displayed in the header.
     subtitle = "is a software developer, hardware hacker and a beer lover. He believes in the power of code."
+    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
 ```
 
 ## Usage
