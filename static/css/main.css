@@ -6,7 +6,7 @@ main {
 /* Header */
 
 .global-header {
-    background-image: url(/images/bg.jpg);
+    background: #222 no-repeat center center;
     background-size: cover;
 }
 
