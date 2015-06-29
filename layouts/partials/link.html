@@ -34,4 +34,9 @@
     <i class="fa fa-linkedin"></i>
   </a>
   {{ end }}
+  {{ with .Site.Params.keybase }}
+  <a href="https://keybase.io/{{ . }}" target="_blank">
+    <i class="fa fa-key"></i>
+  </a>
+  {{ end }}
 </div>
