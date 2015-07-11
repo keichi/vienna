@@ -3,10 +3,10 @@
   <hr />
 {{ end }}
 {{if .HasPrev}}
-  <a class="newer-posts" href="{{ .Prev.URL }}">&laquo; Newer Posts</a>
+<a class="newer-posts" href="{{ .Prev.URL }}"><span aria-hidden="true">&laquo;</span> Newer Posts</a>
 {{end}}
   <span class="page-number">Page {{ .PageNumber }} of {{.TotalPages}}</span>
 {{if .HasNext}}
-  <a class="older-posts" href="{{ .Next.URL }}">Older Posts &raquo;</a>
+<a class="older-posts" href="{{ .Next.URL }}">Older Posts <span aria-hidden="true">&raquo;</span></a>
 {{end}}
 </nav>

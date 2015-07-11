@@ -6,7 +6,7 @@
   <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
   {{ with .Site.Params.themecolor }}
   <meta name="theme-color" content="{{ . }}" />
-  {{ end }}
+ aria-hidden="true"  {{ end }}
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   {{ with .Params.images }}{{ range first 5 . }}
@@ -52,13 +52,13 @@
       {{ partial "link.html" . }}
       {{ if ne .URL "/" }}
       <a href="{{ .Site.BaseURL }}" class="btn-header btn-back hidden-xs">
-        <i class="fa fa-angle-left"></i>
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
         &nbsp;Home
       </a>
       {{ end }}
       {{ with .RSSLink }}
       <a href="{{ . }}" class="btn-header btn-subscribe hidden-xs">
-        <i class="fa fa-rss"></i>
+        <i class="fa fa-rss" aria-hidden="true"></i>
         &nbsp;Subscribe
       </a>
       {{ end }}
