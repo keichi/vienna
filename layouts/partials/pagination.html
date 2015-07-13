@@ -1,4 +1,7 @@
 <nav class="pagination" role="navigation">
+{{ if or .HasPrev .HasNext }}
+  <hr />
+{{ end }}
 {{if .HasPrev}}
   <a class="newer-posts" href="{{ .Prev.URL }}">&laquo; Newer Posts</a>
 {{end}}
