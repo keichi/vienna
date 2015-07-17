@@ -21,6 +21,19 @@
     {{ .Content }}
   </section>
   <footer>
+    {{ with .Site.Params.disqus }}
+    <hr/>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = '{{ . }}';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {{ end }}
     <section class="author-info row">
       <div class="author-avatar col-md-2">
         {{ with .Site.Params.avatar }}
@@ -56,18 +69,6 @@
       <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
       {{ end }}
     </ul>
-    {{ with .Site.Params.disqus }}
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = '{{ . }}';
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    {{ end }}
   </footer>
 </article>
 
