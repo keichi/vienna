@@ -56,7 +56,7 @@
       <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
       {{ end }}
     </ul>
-    {{ with .Site.DisqusShortname }}
+    {{ with .Site.Params.disqus }}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_shortname = '{{ . }}';
