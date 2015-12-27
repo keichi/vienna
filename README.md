@@ -63,6 +63,13 @@ copyright = "&copy; Copyright notice"
     themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
 ```
 
+You may specify following options in `front matter` of your posts to make use of
+this theme's features.
+
+```toml
+noshowdate = true # This will ensure that the date is not printed
+```
+
 ## Usage
 
 Use hugo's `-t vienna` or `--theme=vienna` option with hugo commands.
