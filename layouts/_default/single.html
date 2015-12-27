@@ -4,12 +4,15 @@
   <header>
     <h1 class="text-primary">{{ .Title }}</h1>
     <div class="post-meta clearfix">
+    {{ if (isset .Params "noshowdate")  }}
+    {{ else }}
       <div class="post-date pull-left">
         Posted on
         <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
           {{ .Date.Format "Jan 2, 2006" }}
         </time>
       </div>
+    {{ end }}
       <div class="pull-right">
         {{ range .Params.tags }}
         <span class="post-tag small"><a href="{{ $baseurl }}/tags/{{ . | urlize }}">#{{ . }}</a></span>
