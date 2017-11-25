@@ -42,6 +42,7 @@ copyright = "&copy; Copyright notice"
     # footer.
     twitter = "Your Twitter username"
     github = "Your GitHub username"
+    gitlab = "Your GitLab username"
     linkedin = "Your LinkedIn username"
     googleplus = "Your Google+ user id"
     facebook = "Your Facebook username"
