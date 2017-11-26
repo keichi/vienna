@@ -29,6 +29,21 @@
     <i class="fa fa-github"></i>
   </a>
   {{ end }}
+  {{ with .Site.Params.gitlab }}
+  <a href="https://gitlab.com/{{ . }}" target="_blank">
+    <i class="fa fa-gitlab"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.reddit }}
+  <a href="https://reddit.com/user/{{ . }}" target="_blank">
+    <i class="fa fa-reddit-alien"></i>
+  </a>
+  {{ end }}
+  {{ with .Site.Params.hackernews }}
+  <a href="https://news.ycombinator.com/user?id={{ . }}" target="_blank">
+    <i class="fa fa-hacker-news"></i>
+  </a>
+  {{ end }}
   {{ with .Site.Params.stackoverflow }}
   <a href="https://stackoverflow.com/users/{{ . }}" target="_blank">
     <i class="fa fa-stack-overflow"></i>
