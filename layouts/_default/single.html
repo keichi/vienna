@@ -21,6 +21,8 @@
     {{ .Content }}
   </section>
   <footer>
+    {{ if (isset .Params "nocomments")  }}
+    {{ else }}
     {{ with .Site.Params.disqus }}
     <hr/>
     <div id="disqus_thread"></div>
@@ -33,6 +35,7 @@
       })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {{ end }}
     {{ end }}
     <section class="author-info row">
       <div class="author-avatar col-md-2">
